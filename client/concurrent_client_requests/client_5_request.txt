@@ -1,0 +1,34 @@
+P NeonTiger 120
+P EchoPoint 37
+R EchoPoint
+G EchoPoint
+R EchoPoint
+P WinterPine 68
+R WinterPine
+P WinterPine 75
+G MissingKey6
+R MissingKey7
+P CrimsonWave 99
+P FrostHill 52
+R FrostHill
+G FrostHill
+R FrostHill
+P FrostHill 61
+P OrbitTrail 33
+R OrbitTrail
+G OrbitTrail
+R OrbitTrail
+P LuckyClover 28
+R LuckyClover
+G LuckyClover
+R LuckyClover
+P MistyDawn 64
+P SunsetBay 109
+R SunsetBay
+P SunsetBay 115
+G SunsetBay
+R SunsetBay
+P IronBridge 46
+G IronBridge
+R IronBridge
+P HollowTree 73

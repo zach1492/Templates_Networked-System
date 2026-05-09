@@ -1,0 +1,32 @@
+P Arsenal 31
+P Liverpool 19
+R Arsenal
+G Liverpool
+R Liverpool
+P Chelsea 22
+R Chelsea
+P Everton 14
+G Arsenal
+R Arsenal
+P Spurs 18
+P Villa 27
+R Villa
+G Chelsea
+R Chelsea
+P Leeds 11
+R Leeds
+G Leeds
+R Leeds
+P Brighton 25
+P Wolves 17
+R Brighton
+G Brighton
+R Brighton
+P Palace 13
+R Palace
+G Palace
+R MissingKey1
+P Newcastle 21
+G Wolves
+R Wolves
+

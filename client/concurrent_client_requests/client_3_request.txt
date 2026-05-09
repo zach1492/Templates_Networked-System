@@ -1,0 +1,34 @@
+P FalconWing 126
+P PaperBoat 35
+R PaperBoat
+G PaperBoat
+R PaperBoat
+P CrystalFork 122
+R CrystalFork
+P Driftwood 49
+G CrystalFork
+R CrystalFork
+P CrystalFork 130
+P GreenLantern 92
+R GreenLantern
+G GreenLantern
+R GreenLantern
+P RubyTrail 97
+P SnowyPeak 57
+R RubyTrail
+G RubyTrail
+R RubyTrail
+P OceanBloom 53
+R OceanBloom
+P ScarletPond 101
+G OceanBloom
+R OceanBloom
+P WhitePebble 43
+P TinyAnchor 27
+R TinyAnchor
+G TinyAnchor
+R TinyAnchor
+P FinalPeak 130
+R FinalPeak
+G FinalPeak
+R FinalPeak

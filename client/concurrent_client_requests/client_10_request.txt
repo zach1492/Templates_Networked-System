@@ -1,0 +1,37 @@
+P AppleSeed 22
+P WhitePebble 43
+R WhitePebble
+G WhitePebble
+R WhitePebble
+P ScarletPond 101
+P OceanBloom 53
+R OceanBloom
+G OceanBloom
+R OceanBloom
+P FlyingMaple 129
+R FlyingMaple
+G FlyingMaple
+R FlyingMaple
+P DustyMirror 36
+P TinyAnchor 27
+R TinyAnchor
+G TinyAnchor
+R TinyAnchor
+P BrightRiver 84
+P GlassForest 51
+R BrightRiver
+G BrightRiver
+R BrightRiver
+P GreyFalcon 89
+R GreyFalcon
+G GreyFalcon
+R GreyFalcon
+P FalconWing 126
+R FalconWing
+G FalconWing
+R FalconWing
+P FinalPeak 155
+R FinalPeak
+G FinalPeak
+R FinalPeak
+R MissingKey16

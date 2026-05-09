@@ -1,0 +1,36 @@
+P BlueMoon 17
+P NorthStar 55
+R BlueMoon
+G BlueMoon
+R BlueMoon
+P BlueMoon 30
+P CopperFox 72
+R CopperFox
+G CopperFox
+R CopperFox
+P VelvetSky 63
+P RiverStone 44
+R RiverStone
+G RiverStone
+R RiverStone
+P MarbleField 39
+P QuietRiver 65
+R QuietRiver
+G QuietRiver
+R QuietRiver
+P SoftThunder 69
+R SoftThunder
+P SoftThunder 82
+G SoftThunder
+R SoftThunder
+P StoneGarden 85
+R StoneGarden
+G StoneGarden
+R StoneGarden
+P MeadowSong 116
+P GlassForest 51
+R GlassForest
+G GlassForest
+R GlassForest
+P LongValley 112
+P FinalPeak 130

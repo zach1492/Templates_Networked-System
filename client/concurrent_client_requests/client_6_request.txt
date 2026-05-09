@@ -1,0 +1,36 @@
+P MarbleField 39
+P CedarBloom 81
+R CedarBloom
+G CedarBloom
+R CedarBloom
+P QuietRiver 54
+R QuietRiver
+G QuietRiver
+R QuietRiver
+P QuietRiver 65
+P MidnightOak 67
+R MidnightOak
+G MidnightOak
+R MidnightOak
+P MidnightOak 77
+P SummerEcho 83
+P BrokenArrow 41
+R BrokenArrow
+G BrokenArrow
+R BrokenArrow
+P LemonGlass 32
+P HiddenLantern 143
+R HiddenLantern
+G HiddenLantern
+R HiddenLantern
+P HiddenLantern 150
+P PurpleDrift 86
+R PurpleDrift
+G PurpleDrift
+R PurpleDrift
+G MissingKey8
+R MissingKey9
+P IvoryBranch 47
+R IvoryBranch
+G IvoryBranch
+R IvoryBranch

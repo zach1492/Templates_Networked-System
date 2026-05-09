@@ -1,0 +1,35 @@
+P Arsenal 44
+P KiwiBird 204
+R MissingKey12
+G MissingKey13
+P NorthStar 88
+R NorthStar
+P MangoTree 145
+G MangoTree
+R MangoTree
+P MangoTree 200
+R KiwiBird
+G KiwiBird
+R KiwiBird
+P SilverLake 80
+P OrbitTrail 33
+R OrbitTrail
+P HiddenPath 111
+G HiddenPath
+R HiddenPath
+P HiddenPath 222
+P LuckyClover 28
+R LuckyClover
+G LuckyClover
+R LuckyClover
+G LuckyClover
+P ThunderNest 101
+R MissingKey14
+G MissingKey15
+P CrystalFork 130
+R CrystalFork
+G CrystalFork
+R CrystalFork
+P RubyTrail 97
+G RubyTrail
+R RubyTrail

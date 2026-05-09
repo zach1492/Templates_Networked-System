@@ -1,0 +1,40 @@
+Server started on port 50001
+
+--- Tuple Space Stats ---
+Tuples: 0
+Avg Tuple Size: 0.00
+Avg Key Size: 0.00
+Avg Value Size: 0.00
+Clients: 0
+Operations: 0
+READs: 0
+GETs: 0
+PUTs: 0
+Errors: 0
+
+
+--- Tuple Space Stats ---
+Tuples: 36
+Avg Tuple Size: 11.97
+Avg Key Size: 9.67
+Avg Value Size: 2.31
+Clients: 10
+Operations: 346
+READs: 141
+GETs: 76
+PUTs: 129
+Errors: 109
+
+
+--- Tuple Space Stats ---
+Tuples: 36
+Avg Tuple Size: 11.97
+Avg Key Size: 9.67
+Avg Value Size: 2.31
+Clients: 10
+Operations: 346
+READs: 141
+GETs: 76
+PUTs: 129
+Errors: 109
+

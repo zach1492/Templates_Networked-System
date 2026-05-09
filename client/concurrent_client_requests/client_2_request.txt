@@ -1,0 +1,33 @@
+P KiwiBird 44
+P SilverLake 56
+R KiwiBird
+P NorthStar 88
+G SilverLake
+R SilverLake
+P MangoTree 101
+R MangoTree
+P VelvetSky 63
+G MangoTree
+R MangoTree
+P MangoTree 120
+P RiverStone 49
+R RiverStone
+G RiverStone
+R RiverStone
+P BlueMoon 33
+P CloudHarbor 58
+R CloudHarbor
+G CloudHarbor
+R CloudHarbor
+P AmberRoot 77
+R AmberRoot
+P HiddenPath 90
+G HiddenPath
+R HiddenPath
+P GoldenFeather 118
+R MissingKey2
+G MissingKey3
+P ThunderNest 95
+R ThunderNest
+G ThunderNest
+R ThunderNest

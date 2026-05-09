@@ -1,0 +1,191 @@
+P Arsenal 31
+P Blue-Moon 17
+R Arsenal
+G Blue-Moon
+R Blue-Moon
+P Arsenal 44
+P KiwiBird 204
+R MissingKey1
+G MissingKey2
+P NorthStar 88
+R NorthStar
+P VelvetSky 63
+P MangoTree 145
+G MangoTree
+R MangoTree
+P MangoTree 200
+R KiwiBird
+G KiwiBird
+R KiwiBird
+P CopperFox 72
+P SilverLake 56
+R SilverLake
+G SilverLake
+R SilverLake
+P SilverLake 80
+P QuantumLeaf 91
+P QuantumLeaf 99
+R QuantumLeaf
+G RiverStone
+P RiverStone 44
+R RiverStone
+G RiverStone
+R RiverStone
+P NeonTiger 120
+P EchoPoint 37
+R EchoPoint
+G EchoPoint
+R EchoPoint
+P WinterPine 68
+P WinterPine 75
+R MissingKey3
+G MissingKey4
+P CrimsonWave 99
+P FrostHill 52
+R FrostHill
+G FrostHill
+R FrostHill
+P FrostHill 61
+P AmberRoot 77
+R AmberRoot
+P AmberRoot 88
+G AmberRoot
+R AmberRoot
+P OrbitTrail 33
+P HiddenPath 111
+R HiddenPath
+G HiddenPath
+R HiddenPath
+P HiddenPath 222
+P LuckyClover 28
+R LuckyClover
+G LuckyClover
+R LuckyClover
+G LuckyClover
+P MistyDawn 64
+P SunsetBay 109
+R SunsetBay
+P SunsetBay 115
+G MissingKey5
+R MissingKey6
+P IronBridge 46
+G IronBridge
+R IronBridge
+P HollowTree 73
+P BrightComet 134
+R BrightComet
+G BrightComet
+R BrightComet
+P BrightComet 140
+P MarbleField 39
+P CloudHarbor 58
+R CloudHarbor
+G CloudHarbor
+R CloudHarbor
+P CedarBloom 81
+P ThunderNest 95
+R ThunderNest
+G ThunderNest
+R ThunderNest
+P ThunderNest 101
+R MissingKey7
+G MissingKey8
+P OpenMeadow 26
+P QuietRiver 54
+R QuietRiver
+G QuietRiver
+R QuietRiver
+P QuietRiver 65
+P GoldenFeather 118
+P MidnightOak 67
+R MidnightOak
+G MidnightOak
+R MidnightOak
+P MidnightOak 77
+P SummerEcho 83
+P BrokenArrow 41
+R BrokenArrow
+G BrokenArrow
+R BrokenArrow
+P CrystalFork 122
+P Driftwood 49
+R CrystalFork
+G CrystalFork
+R CrystalFork
+P CrystalFork 130
+P GreenLantern 92
+P PaperBoat 35
+R PaperBoat
+G PaperBoat
+R PaperBoat
+P FalconWing 126
+P DustyRoad 61
+R FalconWing
+G FalconWing
+R FalconWing
+P TinyPlanet 24
+P StoneGarden 75
+R StoneGarden
+G StoneGarden
+R StoneGarden
+P StoneGarden 85
+P RubyTrail 97
+P SnowyPeak 57
+R RubyTrail
+G RubyTrail
+R RubyTrail
+P LemonGlass 32
+P HiddenLantern 143
+R HiddenLantern
+G HiddenLantern
+R HiddenLantern
+P HiddenLantern 150
+G MissingKey9
+R MissingKey10
+P PurpleDrift 86
+P OceanBloom 53
+R OceanBloom
+G OceanBloom
+R OceanBloom
+P ScarletPond 101
+P IvoryBranch 47
+R IvoryBranch
+G IvoryBranch
+R IvoryBranch
+P FlyingMaple 129
+P SoftThunder 69
+R SoftThunder
+G SoftThunder
+R SoftThunder
+P DustyMirror 36
+P AppleSeed 22
+R AppleSeed
+G AppleSeed
+R AppleSeed
+P LongValley 112
+P WhitePebble 43
+R WhitePebble
+G WhitePebble
+R WhitePebble
+P GreyFalcon 89
+P TinyAnchor 27
+R TinyAnchor
+G TinyAnchor
+R TinyAnchor
+P MeadowSong 116
+P QuietStorm 62
+R QuietStorm
+G QuietStorm
+R QuietStorm
+P BrightRiver 84
+P GlassForest 51
+R GlassForest
+G GlassForest
+R GlassForest
+P FinalPeak 130
+R FinalPeak
+G FinalPeak
+R FinalPeak
+P FinalPeak 155
+R MissingKey11
+G MissingKey12

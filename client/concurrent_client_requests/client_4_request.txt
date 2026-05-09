@@ -1,0 +1,35 @@
+P MeadowSong 116
+P QuietStorm 62
+R QuietStorm
+G QuietStorm
+R QuietStorm
+P BrightRiver 84
+P GlassForest 51
+R GlassForest
+G GlassForest
+R GlassForest
+P LongValley 112
+R LongValley
+P SoftThunder 69
+G LongValley
+R LongValley
+P SoftThunder 75
+R SoftThunder
+G SoftThunder
+R SoftThunder
+P AppleSeed 22
+P DustyMirror 36
+R AppleSeed
+G AppleSeed
+R AppleSeed
+P StoneGarden 75
+R StoneGarden
+G StoneGarden
+R StoneGarden
+P StoneGarden 85
+R MissingKey4
+G MissingKey5
+P FlyingMaple 129
+R FlyingMaple
+G FlyingMaple
+R FlyingMaple

@@ -1,0 +1,35 @@
+P CopperFox 72
+P QuantumLeaf 91
+R QuantumLeaf
+P QuantumLeaf 99
+G RiverStone
+P RiverStone 44
+R RiverStone
+G RiverStone
+R RiverStone
+P BrightComet 134
+R BrightComet
+G BrightComet
+R BrightComet
+P BrightComet 140
+P OpenMeadow 26
+R OpenMeadow
+G OpenMeadow
+R OpenMeadow
+P GoldenFeather 118
+P BrokenArrow 55
+R BrokenArrow
+G BrokenArrow
+R BrokenArrow
+P DustyRoad 61
+P TinyPlanet 24
+R TinyPlanet
+G TinyPlanet
+R TinyPlanet
+P GreyFalcon 89
+R GreyFalcon
+G GreyFalcon
+R GreyFalcon
+P FinalPeak 155
+R MissingKey10
+G MissingKey11
