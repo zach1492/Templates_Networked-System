@@ -1,6 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Threading;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
 
 public class TupleSpaceServer
 {
@@ -22,6 +25,8 @@ public class TupleSpaceServer
     #region Getters and Setters
     #endregion
     
+    private static TcpListener listener;
+
     public static void Main(string[] args)
     {
         // TODO:
@@ -31,11 +36,36 @@ public class TupleSpaceServer
         // If invalid, print:
         //      Usage: mono TupleSpaceServer.exe <port>
         //    and stop.
+        if(args.Length != 1){
+            Console.WriteLine("Usage: mono TupleSpaceServer.exe <port>");
+            return;
+        }
 
+        int port = 0;
+
+        if(int.TryParse(args[0], out port)){
+            Console.WriteLine("Port set to: " + port);
+        }else{
+            Console.WriteLine("Error with input");
+            return;
+        }
+        
+        if(port < 50000 || port > 59999){
+            Console.WriteLine("port is out of range " + port);
+            return;
+        }
 
         // Create and start a TCP listener on the port.
         // Start a background thread that runs PrintStatsLoop().
         //
+
+        var hostAddress = IPAddress.Parse("127.0.0.1");
+        listener = new TcpListener(hostAddress, port);
+        listener.Start();
+
+        Thread printStatsThread = new Thread(PrintStatsLoop);
+        printStatsThread.Start();
+
         // STAGE 1:
         // Accept one client connection.
         // Increase totalClients safely.
@@ -43,6 +73,18 @@ public class TupleSpaceServer
         // Pass the accepted TcpClient into the worker thread.
         // Wait for the worker thread to finish.
         //
+
+        TcpClient client = listener.AcceptTcpClient();
+
+        lock(stateLock){
+            totalClients ++;
+        }
+
+        Thread workerThread = new Thread(new ParameterizedThreadStart(TupleSpaceWorker.HandleClient));
+        workerThread.Start(client);
+        
+        workerThread.Join();
+
         // STAGE 2:
         // Change the server so it accepts clients in a loop.
         // Start a new worker thread for each client.
