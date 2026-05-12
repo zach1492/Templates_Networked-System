@@ -25,6 +25,7 @@ public class TupleSpaceClient
         // You may write extra helper methods if you want,
         // but they are not required.
 
+
         if(args.Length != 3){
             Console.WriteLine("3 command lines required");
             return;
@@ -66,6 +67,7 @@ public class TupleSpaceClient
 
                 string[] parts = request.Split(' ');
 
+                //Checks for errors in the file
                 bool valid = false;
 
                 if (parts.Length==2&& (parts[0]=="R" || parts[0]=="G"))
@@ -96,12 +98,13 @@ public class TupleSpaceClient
                     continue;
                 }
 
+                //Get response part
                 byte[] headerBuffer=new byte[4];
                 int totalHeaderRead = 0;
 
                 while(totalHeaderRead < 4)
                 {
-                    int bytesRead = stream.Read(headerBuffer, totalHeaderRead, 4 - totalHeaderRead);
+                    int bytesRead = stream.Read(headerBuffer, totalHeaderRead, 4 - totalHeaderRead);//Reads response header
 
                     if(bytesRead == 0)
                         return;
@@ -119,7 +122,7 @@ public class TupleSpaceClient
 
                 while (totalBodyRead < bodyLength)
                 {
-                    int bytesRead = stream.Read(bodyBuffer, totalBodyRead, bodyLength- totalBodyRead);
+                    int bytesRead = stream.Read(bodyBuffer, totalBodyRead, bodyLength- totalBodyRead); //Reads body of response
 
                     if(bytesRead == 0)
                         break;
@@ -129,6 +132,7 @@ public class TupleSpaceClient
 
                 string response = Encoding.ASCII.GetString(bodyBuffer);
 
+                Console.WriteLine();
                 Console.WriteLine("Request: " + request);
                 Console.WriteLine("Response: " + response);
                 Console.WriteLine();

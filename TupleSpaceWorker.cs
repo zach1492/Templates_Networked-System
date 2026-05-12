@@ -6,21 +6,40 @@ public class TupleSpaceWorker
 {
     public static void HandleClient(object clientObject)
     {
+        // TODO:
+        // 1. Cast the object to TcpClient.
+        // 2. Get the NetworkStream from the client.
+        // 3. Repeatedly read one request from the client using the framed protocol.
+        // 4. Call TupleSpaceServer.HandleRequest(...) to process that request.
+        // 5. Send the response back to the client using the framed protocol.
+        // 6. Stop when the client disconnects.
+        //
+        // You may create extra helper methods if you want,
+        // but they are not required.
+
         TcpClient client = (TcpClient)clientObject;
 
         NetworkStream stream = client.GetStream();
 
+        //reads clients header and body and then gets a response
         try
         {
             while(client.Connected)
             {
                 byte[] headerBuffer = new byte[4];
                 
-                int headerBytesRead = stream.Read(headerBuffer, 0, 4);
+                int totalHeaderRead = 0;
 
-                if (headerBytesRead == 0)
+                while(totalHeaderRead < 4)
                 {
-                    break;
+                    int bytesRead = stream.Read(headerBuffer, totalHeaderRead, 4 - totalHeaderRead);//Getx header
+                    
+                    if(bytesRead == 0)
+                    {
+                        break;
+                    }
+                    
+                    totalHeaderRead += bytesRead;
                 }
 
                 string header = Encoding.ASCII.GetString(headerBuffer);
@@ -33,7 +52,7 @@ public class TupleSpaceWorker
 
                 while(totalBytesRead < bodyLength)
                 {
-                    int bytesRead = stream.Read(bodyBuffer, totalBytesRead, bodyLength - totalBytesRead);
+                    int bytesRead = stream.Read(bodyBuffer, totalBytesRead, bodyLength - totalBytesRead);//Gets body
 
                     if(bytesRead == 0)
                     {
@@ -44,14 +63,14 @@ public class TupleSpaceWorker
                 }
 
                 string requestBody = Encoding.ASCII.GetString(bodyBuffer);
-                string responseBody = TupleSpaceServer.HandleRequest(requestBody);
+                string responseBody = TupleSpaceServer.HandleRequest(requestBody); //get request from turple space server
                 int responseLength = responseBody.Length + 4;
 
                 string framedResponse = responseLength.ToString("D3") + " " + responseBody;
                 byte[] responseBytes = Encoding.ASCII.GetBytes(framedResponse);
 
                 stream.Write(responseBytes, 0, responseBytes.Length);
-
+                stream.Flush();
             }
         }
         catch(Exception ex)
@@ -61,18 +80,6 @@ public class TupleSpaceWorker
 
         stream.Close();
         client.Close();
-
-        // TODO:
-        // 1. Cast the object to TcpClient.
-        // 2. Get the NetworkStream from the client.
-        // 3. Repeatedly read one request from the client using the framed protocol.
-        // 4. Call TupleSpaceServer.HandleRequest(...) to process that request.
-        // 5. Send the response back to the client using the framed protocol.
-        // 6. Stop when the client disconnects.
-        //
-        // You may create extra helper methods if you want,
-        // but they are not required.
-
 
     }
 }

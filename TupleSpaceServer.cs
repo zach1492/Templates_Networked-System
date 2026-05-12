@@ -20,6 +20,7 @@ public class TupleSpaceServer
     private static int putCount = 0;
     private static int errorCount = 0;
     
+    //Varibles for calculating stats
     private static int totalKeySize = 0;
     private static int totalValueSize = 0;
     
@@ -39,6 +40,8 @@ public class TupleSpaceServer
         // If invalid, print:
         //      Usage: mono TupleSpaceServer.exe <port>
         //    and stop.
+
+        //Correct args check
         if(args.Length != 1){
             Console.WriteLine("Usage: mono TupleSpaceServer.exe <port>");
             return;
@@ -53,13 +56,12 @@ public class TupleSpaceServer
         }
         
         if(port < 50000 || port > 59999){
-            Console.WriteLine("port is out of range " + port);
+            Console.WriteLine("Port is out of range: " + port);
             return;
         }
 
         // Create and start a TCP listener on the port.
         // Start a background thread that runs PrintStatsLoop().
-        //
 
         var hostAddress = IPAddress.Parse("127.0.0.1");
         listener = new TcpListener(hostAddress, port);
@@ -76,6 +78,8 @@ public class TupleSpaceServer
         // Pass the accepted TcpClient into the worker thread.
         // Wait for the worker thread to finish.
         //
+
+        //Waits for a client to join and then hands it to the worker thread
         while(true){
             TcpClient client = listener.AcceptTcpClient();
 
@@ -88,6 +92,7 @@ public class TupleSpaceServer
         
             //workerThread.Join();
         }
+
         // STAGE 2:
         // Change the server so it accepts clients in a loop.
         // Start a new worker thread for each client.
@@ -103,6 +108,8 @@ public class TupleSpaceServer
         // Update the counters.
         // Return the correct response string.
         // When multiple worker threads are running, shared state must be protected.
+
+        //Completes the requests task, returns a response for the worker to send back
         string[] parts = requestBody.Split(' ');
 
         if(parts.Length < 2)
@@ -205,8 +212,8 @@ public class TupleSpaceServer
         lock(stateLock)
         {
             double avgTuple = tupleSpace.Count == 0 ? 0 : (totalKeySize + totalValueSize) * 1.0 / tupleSpace.Count;
-            double avgKey = tupleSpace.Count == 0 ? 0 :totalKeySize * 1.0 /tupleSpace.Count;
-            double avgValue = tupleSpace.Count == 0 ? 0 :totalValueSize * 1.0/tupleSpace.Count;
+            double avgKey = tupleSpace.Count == 0 ? 0 : totalKeySize * 1.0 / tupleSpace.Count;
+            double avgValue = tupleSpace.Count == 0 ? 0 : totalValueSize * 1.0/ tupleSpace.Count;
             
 
             Console.WriteLine("\n--- Tuple Space Stats ---");
