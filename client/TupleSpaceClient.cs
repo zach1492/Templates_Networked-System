@@ -46,7 +46,7 @@ public class TupleSpaceClient
 
         if(!File.Exists(filePath))
         {
-            Console.WriteLine("input file does not exist");
+            Console.WriteLine("Input file does not exist");
             return;
         }
         
@@ -68,11 +68,11 @@ public class TupleSpaceClient
 
                 bool valid = false;
 
-                if (parts.Length > 0 &&(parts[0]=="R" || parts[0]=="G")&&parts.Length==2)
+                if (parts.Length==2&& (parts[0]=="R" || parts[0]=="G"))
                 {
                     valid = true;
                 }
-                else if(parts[0] == "P" && parts.Length == 3)
+                else if(parts.Length == 3 && parts[0] == "P" )
                 {
                     int value;
 
