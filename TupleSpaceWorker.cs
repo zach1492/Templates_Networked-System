@@ -15,6 +15,7 @@ public class TupleSpaceWorker
             while(client.Connected)
             {
                 byte[] headerBuffer = new byte[4];
+                
                 int headerBytesRead = stream.Read(headerBuffer, 0, 4);
 
                 if (headerBytesRead == 0)
