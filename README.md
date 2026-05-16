@@ -1,88 +1,86 @@
 # Networked System
 
-This university project is a TCP server build in C# and runs in terminal. It can accept multiple clients and uses locking to protect data corruption in critical sections. 
+This university project is a TCP server built in C# and runs in the terminal. It can accept multiple clients and uses locking to protect data corruption in critical sections.
 
-# Technolgies
+## Technologies
 
- • C#
- 
- • VS code
- 
- • Terminal
+• C#
 
-# Features
+• VS Code
 
- • Server stores client data
- 
- • It can return, add and delete client data
+• Terminal
 
- • Multiple clients can be handled safely by threading and having dedicated client objects
+## Features
 
- • Mutex locking is used to protect critical sections
+• Server stores client data
 
- • Prints server stats every 10 seconds
+• It can return, add and delete client data
 
- # Commands
+• Multiple clients can be handled safely by threading and having dedicated client objects
+
+• Mutex locking is used to protect critical sections
+
+• Prints server stats every 10 seconds
+
+## Commands
 
 mcs TupleSpaceServer.cs TupleSpaceWorker.cs
-  
+
 mono TupleSpaceServer.exe 50001
-    
-### In client folder, compiling and running at the same time
+
+### In client folder, compile and run at the same time:
 
 mcs TupleSpaceClient.cs && mono TupleSpaceClient.exe localhost 50001 sample_requests.txt
-    
-### Or with multiple clients
-    
-for i in $(seq 1 10)
-    
-do
-    
-mono TupleSpaceClient.exe localhost 50001 "concurrent_client_requests/client_${i}_request.txt" &
 
+### Or with multiple clients:
+
+for i in $(seq 1 10)
+do
+mono TupleSpaceClient.exe localhost 50001 "concurrent_client_requests/client_${i}_request.txt" &
 done
-    
+
 wait
 
-# Process
+## Process
 
-The first step was verifying that the entered port was valid to use. After this it was parsed to the listner to start listening for clients
+The first step was verifying that the entered port was valid to use. After this it was parsed to the listener to start listening for clients.
 
-After this I created a worker thread that can manage one connected client and parsed it a accepted client. 
+After this I created a worker thread that can manage one connected client and parsed it a accepted client.
 
-I then made the client able to connect to connect and send requests to the worker. And the worker to send responses. To make this work propoly I added in framing.
+I then made the client able to connect and send requests to the worker, and the worker to send responses. To make this work properly I added framing.
 
-I then made the server correctly handle requests, and  then print out the stats
+I then made the server correctly handle requests, and then print out the stats.
 
-Then I used a while loop so the server could accept concurrent clients
+Then I used a while loop so the server could accept concurrent clients.
 
-# What I learned
-## TCP Server
+## What I learned
 
-I learned how to make a multi threaded TCP server. I learned how to set up a server socket using TcpListener and accept incoming client connections
+### TCP Server
 
-## Thread Safety
+I learned how to make a multi-threaded TCP server. I learned how to set up a server socket using TcpListener and accept incoming client connections.
 
-I develped my understanding of thread safety principles, like protecting shared resources, using critical sections and ensuring atomic updates to a shared state
+### Thread Safety
 
-## Communication Protocol
+I developed my understanding of thread safety principles, like protecting shared resources, using critical sections, and ensuring atomic updates to a shared state.
 
-I learned how to convert bytes to text and vice versa and then using that text based protocol to for commands like READ, GET and PUT
+### Communication Protocol
 
-## Framing
+I learned how to convert bytes to text and vice versa, and then using that text-based protocol to form commands like READ, GET and PUT.
 
-To ensure that the client and servers got the full messages I used framing to ensure that the scripts kept listening until they got the full message
+### Framing
 
-# How it can be improved
+To ensure that the client and server got the full messages, I used framing to ensure that the scripts kept listening until they got the full message.
 
-• The clients outputted to much text cluttering the terminal, so reducing there output would be an improvement
+## How it can be improved
 
-• The commands are quite limited now so maybe having more would make the server more useful
+• The client outputted too much text, cluttering the terminal, so reducing their output would be an improvement
 
-• The server was only tested on one machine so maybe testing it on multiple would be better
+• The commands are quite limited now, so maybe having more would make the server more useful
 
-# How to run
+• The server was only tested on one machine, so maybe testing it on multiple would be better
 
-Clone the repository to your machine
+## How to run
 
-Then run the commands above
+Clone the repository to your machine.
+
+Then run the commands above.
