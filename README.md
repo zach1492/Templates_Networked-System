@@ -2,8 +2,8 @@
 
 This university project is a TCP server built in C# and runs in the terminal. It can accept multiple clients and uses locking to protect data corruption in critical sections.
 
-<img align="left" width="300" height="800" src="https://github.com/zach1492/zach1492/blob/main/portfolio_images/4C1C4990-77A8-4CD8-9C14-60FC9C51C78A.png">
-
+<img align="left" width="350" height="800" src="https://github.com/zach1492/zach1492/blob/main/portfolio_images/4C1C4990-77A8-4CD8-9C14-60FC9C51C78A.png">
+<br clear="left">
 ## Technologies
 
 • C#
