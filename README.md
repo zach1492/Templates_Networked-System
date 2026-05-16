@@ -3,7 +3,6 @@
 This university project is a TCP server built in C# and runs in the terminal. It can accept multiple clients and uses locking to protect data corruption in critical sections.
 
 
-![image alt](https://github.com/zach1492/zach1492/blob/main/portfolio_images/4C1C4990-77A8-4CD8-9C14-60FC9C51C78A.png)
 ## Technologies
 
 • C#
@@ -23,6 +22,9 @@ This university project is a TCP server built in C# and runs in the terminal. It
 • Mutex locking is used to protect critical sections
 
 • Prints server stats every 10 seconds
+
+
+![image alt](https://github.com/zach1492/zach1492/blob/main/portfolio_images/4C1C4990-77A8-4CD8-9C14-60FC9C51C78A.png)
 
 ## Commands
 
