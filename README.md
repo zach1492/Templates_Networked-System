@@ -38,14 +38,11 @@ mcs TupleSpaceClient.cs && mono TupleSpaceClient.exe localhost 50001 sample_requ
 
 ### Or with multiple clients:
 
-'''
 for i in $(seq 1 10)
 do
 mono TupleSpaceClient.exe localhost 50001 "concurrent_client_requests/client_${i}_request.txt" &
 done
-
 wait
-'''
 
 ## Process
 
