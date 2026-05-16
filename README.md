@@ -24,7 +24,7 @@ This university project is a TCP server built in C# and runs in the terminal. It
 
 ## Commands
 
-'''
+```console
 mcs TupleSpaceServer.cs TupleSpaceWorker.cs
 
 mono TupleSpaceServer.exe 50001
