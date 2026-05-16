@@ -28,21 +28,23 @@ This university project is a TCP server built in C# and runs in the terminal. It
 mcs TupleSpaceServer.cs TupleSpaceWorker.cs
 
 mono TupleSpaceServer.exe 50001
-'''
+```
 
 ### In client folder, compile and run at the same time:
 
-'''
+```console
 mcs TupleSpaceClient.cs && mono TupleSpaceClient.exe localhost 50001 sample_requests.txt
-'''
+```
 
 ### Or with multiple clients:
 
+```console
 for i in $(seq 1 10)
 do
 mono TupleSpaceClient.exe localhost 50001 "concurrent_client_requests/client_${i}_request.txt" &
 done
 wait
+```
 
 ## Process
 
